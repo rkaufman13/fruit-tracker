@@ -1,0 +1,24 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+  color:white;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  viewport-fill: black;
+}
+
+#today {
+  border: 1px solid red;
+  color: white;
+  text-anchor: middle;
+}
+
+#yesterday {
+  border: 1px solid red;
+  text-anchor: middle;
+}

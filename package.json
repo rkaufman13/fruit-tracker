@@ -1,0 +1,27 @@
+{
+  "name": "fruits",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~4.0.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "74375fbf-752f-4ead-8d08-72293e63082a",
+    "appType": "app",
+    "appDisplayName": "Fruit Tracker",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#000000",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "mira"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}
