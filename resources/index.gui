@@ -3,23 +3,24 @@
  
   <text fill="white" x="50%" y="15%" text-anchor="middle" font-size="20" id="yesterday">Yesterday
   </text>
-  <text fill="white" x="50%" y="15%+30" text-anchor="middle" font-size="18" id="yesterdayCount">5 servings</text>
- <line x1="15%" y1="15%+40" x2="85%" y2="15%+40" fill="pink"/>
-  <text fill="white"  x="50%" y="40%" text-anchor="middle" font-size="30" id="today">
+  <text fill="white" x="50%" y="15%+30" text-anchor="middle" font-size="18" id="yesterdayCount" text-length="16"></text>
+ <line x1="15%" y1="15%+45" x2="85%" y2="15%+45" fill="pink"/>
+  <text fill="white"  x="50%" y="45%" text-anchor="middle" font-size="30" id="today">
   Today
   </text>
  
- <rect fill="white" x="34%" y="49%" width="100" height="100"/>
- <rect fill="black" x="35%" y="50%" width="95" height="95"/>
- <text fill="white" x="50%" y="75%" text-anchor="middle" font-size="90" id="todayCount">5</text>
+
+ <text fill="white" x="50%" y="70%" text-anchor="middle" font-size="80" id="todayCount" text-length="1"></text>
  
- <rect fill="white" x="15%" y="60%" width="35" height="35"/>
- <rect fill="black" x="16%" y="61%" width="30" height="30"/>
- <line fill="white" x1="15%+6" y1="61%+14" x2="15%+27" y2="61%+14" stroke-width="3" focusable="false"/>
-  
-<rect fill="white" x="75%" y="60%" width="35" height="35"/>
- <rect fill="black" x="76%" y="61%" width="30" height="30"/>
-<line fill="white" x1="75%+6" y1="61%+14" x2="75%+27" y2="61%+14" stroke-width="3" focusable="false"/>
-<line fill="white" x1="75%+17" y1="61%+3" x2="75%+17" y2="61%+25" stroke-width="3" focusable="false"/>
+ 
+<use id="btnDec" class="dialog-half-button-left" href="#square-button-neutral">
+        <set href="#text" attributeName="text-buffer" to="-" />
+        <set href="#text" attributeName="text-anchor" to="middle" />
+      </use>
+
+<use id="btnInc" class="dialog-half-button-right" href="#square-button-neutral">
+        <set href="#text" attributeName="text-buffer" to="+" />
+        <set href="#text" attributeName="text-anchor" to="middle" />
+      </use>
 
 </svg>
