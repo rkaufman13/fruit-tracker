@@ -24,8 +24,8 @@ messaging.peerSocket.addEventListener("message", (evt) => {
 });
 
 incrementButton.addEventListener("click", (evt) => {
-  currServings++;
-  if (currServings < 10) {
+  if (currServings < 9) {
+    currServings++;
     countElem.textContent = currServings;
     if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
       messaging.peerSocket.send(currServings);
@@ -34,8 +34,8 @@ incrementButton.addEventListener("click", (evt) => {
 });
 
 decrementButton.addEventListener("click", () => {
-  currServings--;
-  if (currServings >= 0) {
+  if (currServings > 0) {
+    currServings--;
     countElem.textContent = currServings;
     if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
       messaging.peerSocket.send(currServings);
