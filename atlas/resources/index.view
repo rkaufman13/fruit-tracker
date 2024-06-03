@@ -1,0 +1,26 @@
+<svg id="background">
+  
+ 
+  <text fill="white" x="50%" y="15%" text-anchor="middle" font-size="20" id="yesterday">Yesterday
+  </text>
+  <text fill="white" x="50%" y="15%+30" text-anchor="middle" font-size="18" id="yesterdayCount" text-length="16"></text>
+ <line x1="15%" y1="15%+45" x2="85%" y2="15%+45" fill="pink"/>
+  <text fill="white"  x="50%" y="37%" text-anchor="middle" font-size="30" id="today">
+  Today
+  </text>
+ 
+
+ <text fill="white" x="50%" y="60%" text-anchor="middle" font-size="80" id="todayCount" text-length="1"></text>
+ 
+ 
+<use id="btnDec" class="text-button bottom left secondary application-fill" href="#text-button">
+        <set href="#text" attributeName="text-buffer" to="-" />
+        <set href="#text" attributeName="text-anchor" to="middle" />
+      </use>
+
+<use id="btnInc" class="text-button bottom right secondary application-fill" href="#text-button">
+        <set href="#text" attributeName="text-buffer" to="+" />
+        <set href="#text" attributeName="text-anchor" to="middle" />
+      </use>
+
+</svg>
